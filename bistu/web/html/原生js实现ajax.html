@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<button  >点击我发送异步请求</button>-->
+    <input type="button" value="点击我发送异步请求" onclick="fun();">
+    <input type="text">
+</body>
+<script>
+    window.onload = function () {
+        alert("测试")
+    }
+
+    function fun(){
+        //1.创建核心对象
+        var xmlhttp;
+        if (window.XMLHttpRequest)
+        {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        //2.发送请求
+        xmlhttp.open("GET","/learn_tomcat/ajaxServlet?username=Tom",false);
+
+        //接收并处理来自服务器的响应结果
+        xmlhttp.onreadystatechange=function()
+        {
+            //判断就绪状态
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                var responseText = xmlhttp.responseText;
+                alert(responseText)
+                console.log(responseText)
+            }
+            alert("333")
+        }
+        //发送请求  如果是post请求，send方法里写参数
+        xmlhttp.send();
+    }
+</script>
+</html>

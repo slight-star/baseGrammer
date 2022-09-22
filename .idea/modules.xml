@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/baseGrammar.iml" filepath="$PROJECT_DIR$/baseGrammar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bistu/bistu.iml" filepath="$PROJECT_DIR$/bistu/bistu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day01/day01.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day01/day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day01/day011.iml" filepath="$PROJECT_DIR$/JavaSenior/day01/day011.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day02/day02.iml" filepath="$PROJECT_DIR$/JavaSenior/day02/day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day02/day021.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day02/day021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day03/day03.iml" filepath="$PROJECT_DIR$/JavaSenior/day03/day03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day03/day031.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day03/day031.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day04/day04.iml" filepath="$PROJECT_DIR$/JavaSenior/day04/day04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day04/day041.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day04/day041.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day05/day05.iml" filepath="$PROJECT_DIR$/JavaSenior/day05/day05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day05/day051.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day05/day051.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day06/day06.iml" filepath="$PROJECT_DIR$/JavaSenior/day06/day06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day06/day061.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day06/day061.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day07/day07.iml" filepath="$PROJECT_DIR$/JavaSenior/day07/day07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day07/day071.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day07/day071.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day08/day08.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day08/day08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day08/day081.iml" filepath="$PROJECT_DIR$/JavaSenior/day08/day081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day09/day09.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day09/day09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day09/day091.iml" filepath="$PROJECT_DIR$/JavaSenior/day09/day091.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day10/day10.iml" filepath="$PROJECT_DIR$/JavaSenior/day10/day10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day10/day101.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day10/day101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day11/day11.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day11/day11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day11/day111.iml" filepath="$PROJECT_DIR$/JavaSenior/day11/day111.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day12/day12.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day12/day12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/day12/day121.iml" filepath="$PROJECT_DIR$/JavaSenior/day12/day121.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/day13/day13.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/day13/day13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hehe/hehe.iml" filepath="$PROJECT_DIR$/hehe/hehe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/java9test/java9test.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/java9test/java9test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn_tomcat/learn_tomcat.iml" filepath="$PROJECT_DIR$/learn_tomcat/learn_tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/JavaSenior/myproject03/myproject03.iml" filepath="$PROJECT_DIR$/JavaSenior/JavaSenior/myproject03/myproject03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSenior/myproject03/myproject031.iml" filepath="$PROJECT_DIR$/JavaSenior/myproject03/myproject031.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web1/web1.iml" filepath="$PROJECT_DIR$/web1/web1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/数据结构/数据结构.iml" filepath="$PROJECT_DIR$/数据结构/数据结构.iml" />
+    </modules>
+  </component>
+</project>

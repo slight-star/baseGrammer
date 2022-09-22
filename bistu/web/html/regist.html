@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            //给username input绑定离焦事件
+            $("#username").blur(function () {
+                //获取输入框中的值
+                var username = $(this).val();
+                //发送ajax请求
+                //期望服务器响应的数据 {"userExist":true,"msg":"此用户名已存在”} {"userExist":false,"msg":"可用”}
+                $.get("/learn_tomcat/findUserServlet",
+                    {"username":username},
+                    function (data) {
+                        // alert(data);
+                        var span = $("#s_username");
+                        if (data.userExist){
+                            //用户名存在
+                            span.css("color","red");
+                            span.html(data.msg);
+                        }else{
+                            //用户名不存在
+                            span.css("color","green");
+                            span.html(data.msg);
+                        }
+                    },"json");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <form action="/learn_tomcat/requestDemo7" method="post">
+        <input type="text" id="username" placeholder="请输入用户名" name="username">
+        <span id="s_username"></span><br>
+        <input type="text" placeholder="请输入密码" name="password"><br>
+        <input type="checkbox" name="hobby" value="book">读书 <br>
+        <input type="checkbox" name="hobby" value="study">学习 <br>
+
+        <img id="checkCode" src="/learn_tomcat/checkCodeServlet" alt="" onclick="change()">
+        <a id="change" href="#" onclick="change()">看不清换一张？</a>
+
+        <input type="submit" value="注册">
+    </form>
+</body>
+<script>
+    window.onload = function(){
+        var checkCode = document.getElementById("checkCode")
+        checkCode.onclick = function(){
+            //获取时间戳
+            var date = new Date().getTime()
+            checkCode.src = "/learn_tomcat/checkCodeServlet?"+date
+        }
+    }
+
+    function change(){
+        var checkCode = document.getElementById("checkCode")
+        var date = new Date().getTime()
+        checkCode.src = "/learn_tomcat/checkCodeServlet?"+date
+    }
+
+
+</script>
+</html>

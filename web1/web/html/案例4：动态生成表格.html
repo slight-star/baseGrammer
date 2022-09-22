@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    行: <input type="text" id="hang">
+    列: <input type="text" id="col">
+    <br>
+    <input type="button" onclick="add2()" value="生成">
+    <div id="divv">
+
+    </div>
+</body>
+    <script>
+        function add2(){
+            var hang = document.getElementById("hang").value;
+            var col = document.getElementById("col").value;
+
+            tab = "<table border='1'>";
+            for (var i=0; i<hang; i++){
+                tab += "<tr>";
+                for (var j = 0; j < col; j++) {
+                    tab += "<td>AAAA</td>";
+                }
+                tab += "</tr>";
+            }
+            tab += "</table>";
+
+            var divv = document.getElementById("divv");
+            divv.innerHTML = tab;
+        }
+
+    </script>
+</html>

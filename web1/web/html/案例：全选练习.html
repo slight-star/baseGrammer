@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="checkbox" id="allCheck" onclick="selAllNo()">全选/全不选<br/>
+    <input type="checkbox" name="hobby" >篮球<br/>
+    <input type="checkbox" name="hobby" >足球<br/>
+    <input type="checkbox" name="hobby" >排球<br/>
+    <input type="checkbox" name="hobby" >乒乓球<br/>
+    <input type="button" onclick="selAll()" value="全选" >
+    <input type="button" onclick="selNo()" value="全不选" >
+    <input type="button" onclick="selOther()" value="反选" >
+
+    <script>
+        function selAllNo(){
+            //1.获取全选/全不选复选框
+            var hobbyEle = document.getElementById("allCheck");
+            //2.遍历数组，设置选中状态
+            if (hobbyEle.checked == true){
+                selAll();
+            }else{
+                selNo();
+            }
+        }
+
+        function selAll(){
+            //1.获取所有复选框，得到一个数组
+            var hobbies = document.getElementsByName("hobby");
+            //2.遍历数组，设置选中状态
+            for(var i=0; i<hobbies.length; i++){
+                var hobby = hobbies[i];
+                hobby.checked = true;
+            }
+        }
+
+        function selNo(){
+            var hobbies = document.getElementsByName("hobby");
+            for (var i=0; i<hobbies.length; i++){
+                var hobby = hobbies[i];
+                hobby.checked = false;
+            }
+        }
+
+        function selOther(){
+            var hobbies = document.getElementsByName("hobby");
+            for (var i=0; i<hobbies.length; i++){
+                var hobby = hobbies[i];
+                if(hobby.checked == true){
+                    hobby.checked = false;
+                }else{
+                    hobby.checked = true;
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

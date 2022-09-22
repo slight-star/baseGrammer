@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图文混排案例</title>
+</head>
+    <style type="text/css">
+        #imgtext11 {
+            width: 400px;
+            height: 300px;
+        }
+
+        #img11 {
+            float: left;
+        }
+
+        #text11 {
+            color: red;
+        }
+
+        #div2{
+            width: 300px;
+            height:300px;
+            border: 1px solid red;
+        }
+
+        #img22{
+            width: 200px;
+            height: 500px;
+        }
+
+        #text22{
+            position: absolute;
+            top: 350px;
+            left: 150px;
+            color: orange;
+            border: 1px solid green;
+        }
+
+        #div3{
+            width: 300px;
+            height:300px;
+            border: 1px solid blue;
+        }
+
+        #img33{
+            width: 400px;
+            height: 250px;
+            border: 2px solid purple;
+        }
+
+        #text33{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            color: orange;
+            border: 1px solid orange;
+        }
+    </style>
+<body>
+<!--图文混排-->
+    <div id="imgtext11">
+        <div id="img11"><img src="pic/任务一接口图.png" width="350px" height="150px"></div>
+        <div id="text11">阿哈萨克分为OK旅责险拉撒都快来阿萨德科技爱上咖啡了健康大飞机破位非常开车</div>
+    </div>
+<!--图像签名-->
+    <div id="div2">
+        <div id="img22"><img src="pic/任务一接口图.png" width="auto" height="500"></div>
+        <div id="text22">这是任务一的接口图</div>
+    </div>
+
+    <frameset cols="10,*" frameborder="2px solid red" >
+        <div id="div3">
+            <div ><img src="pic/无标题.png" id="img33" ></div>
+            <div id="text33">这是任务一的接口图</div>
+        </div>
+    </frameset>
+</body>
+</html>

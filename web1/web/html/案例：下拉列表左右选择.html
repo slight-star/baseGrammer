@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="float:left;">
+      <select id="sel1" name="select1" multiple="multiple" style="width:100px;height:100px;">
+          <option>AAAAAAA</option>
+          <option>BBBBBBB</option>
+          <option>CCCCCCC</option>
+          <option>DDDDDDD</option>
+          <option>EEEEEEE</option>
+      </select>
+      <br/>
+      <input type="button" onclick="selToRight()" value="选中添加到右边"><br/>
+      <input type="button" onclick="allToRight()" value="全部添加到右边"><br/>
+    </div>
+
+    <div>
+      <select id="sel2" name="select2" multiple="multiple" style="width:100px;height:100px;">
+          <option>QQQQQQQ</option>
+      </select>
+      <br/>
+      <input type="button" onclick="selToLeft()" value="选中添加到左边"><br/>
+      <input type="button" onclick="allToLeft()" value="全部添加到左边"><br/>
+    </div>
+
+    <script>
+        function selToRight(){
+            //1.获取sel1，sel2
+            var sel1 = document.getElementById("sel1");
+            var sel2 = document.getElementById("sel2");
+            //2.获取sel1所有的option
+            var options = sel1.getElementsByTagName("option");
+            //3.遍历判断每一个是否被选中，选中的放到select2
+            var length
+            for (var i=0; i<options.length; i++){
+                var op = options[i];
+                if (op.selected == true){
+                    sel2.appendChild(op);
+                    i--;
+                }
+            }
+        }
+
+        function allToRight(){
+            var sel1 = document.getElementById("sel1");
+            var sel2 = document.getElementById("sel2");
+
+            var options = sel1.getElementsByTagName("option");
+
+            for (var i=0; i<options.length; i++){
+                var op = options[i];
+                sel2.appendChild(op);
+                i--;
+            }
+        }
+
+        function selToLeft(){
+            //1.获取sel1，sel2
+            var sel1 = document.getElementById("sel1");
+            var sel2 = document.getElementById("sel2");
+            //2.获取sel2所有的option
+            var options = sel2.getElementsByTagName("option");
+            //3.遍历判断每一个是否被选中，选中的放到select1
+            for (var i=0; i<options.length; i++){
+                var op = options[i];
+                if (op.selected == true){
+                    sel1.appendChild(op);
+                    i--;
+                }
+            }
+        }
+
+        function allToLeft(){
+            var sel1 = document.getElementById("sel1");
+            var sel2 = document.getElementById("sel2");
+
+            var options = sel2.getElementsByTagName("option");
+
+            for (var i=0; i<options.length; i++){
+                var op = options[i];
+                sel1.appendChild(op);
+                i--;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        var randoms = {
+            ads_codes: ['666','777','888'],
+            ads_weight: [10,10,10],
+            ads_timer: 10,
+            get_cookie: function(n) {
+                var a = document.cookie.match(new RegExp("(^| )" + n + "=([^;]*)(;|$)"));
+                if (a != null) return decodeURI(a[2]);
+                return null;
+            },
+
+            get_random: function(weight) {
+                var s = eval(weight.join('+'));
+                var r = Math.floor(Math.random() * s);
+                var w = 0;
+                var n = weight.length - 1;
+                for(var k in weight){w+=weight[k];if(w>=r){n=k;break;}};
+                return n;
+            },
+            init: function() {
+                if (randoms.get_cookie('XCY_cookie_XCY')) return;
+
+                var rand = randoms.get_random(randoms.ads_weight);
+                document.write(randoms.ads_codes[rand]);
+                var time = new Date();
+                time.setTime(time.getTime() + randoms.ads_timer * 1000);
+                document.cookie = 'XCY_cookie_XCY=1;expires=' + time.toGMTString() + ';path=/;';
+
+            }
+        }
+        randoms.init();
+    </script>
+</body>
+</html>

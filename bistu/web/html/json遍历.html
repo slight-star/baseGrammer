@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    var person = {"name":"zhangsan","age":12,"gender":true};
+
+    var ps = [{"name":"zhangsan","age":12,"gender":true},
+        {"name":"王五","age":32,"gender":false},
+        {"name":"李留","age":52,"gender":true}];
+
+    // 获取person对象中所有的键和值
+    // for (var key in person){
+    //     alert(key + ":" + person[key])
+    // }
+
+    for (var a in ps ){
+        console.log(a)  //数组遍历只会遍历出下标
+    }
+    for (var i = 0; i<ps.length; i++){
+        var p = ps[i];
+        for (var key in p){
+            alert(key + ":" + p[key])
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>

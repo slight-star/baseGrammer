@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form action="user.html">
+    用户名:<input type="text" name="username">
+    <br>
+    <input type="submit" value="提交">
+  </form>
+  <br><br>
+
+  <form id="formEle">
+      用户名:<input type="text" name="username">
+      <br>
+      <input type="button" onclick="formSubmit()" value="按钮提交表单">
+  </form>
+  <br><br>
+
+  <a href="user.html?username=123">通过超链接提交</a>
+  <br><br>
+
+  <input type="text" id="inputId"  onfocus="focus1()" onblur="blur1()" >
+
+</body>
+    <script>
+        function formSubmit(){
+            var formEle = document.getElementById("formEle");
+            formEle.action = "user.html";
+            formEle.submit();
+        }
+
+        function focus1(){
+            var input1 = document.getElementById("inputId");
+            input1.value = "";
+        }
+
+        function blur1(){
+            var input1 = document.getElementById("inputId");
+            input1.value = "请输入";
+        }
+    </script>
+</html>

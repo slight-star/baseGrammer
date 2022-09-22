@@ -1,0 +1,399 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BS_Server",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.BS_Server",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch CopyDirectory",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.CopyDirectory",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exer1",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.Exer1",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileDemo",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.FileDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectInputStreamDemo",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.ObjectInputStreamDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectOutputStreamDemo",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.ObjectOutputStreamDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch OutputStreamWriterDemo",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.OutputStreamWriterDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch TransDemo",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.TransDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch UpLoadClient",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.UpLoadClient",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch UpLoadServer",
+            "request": "launch",
+            "mainClass": "com.dong.IOAndSocket.UpLoadServer",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayAddCapacity",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.ArrayAddCapacity",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayDelElement",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.ArrayDelElement",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.BinarySearch",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiGuiFeibonacci",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.DiGuiFeibonacci",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch DouDiZhu",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.DouDiZhu",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch DouDiZhuPlus",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.DouDiZhuPlus",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hanoi",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.Hanoi",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.BubbleSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch InserSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.InserSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.MergeSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.QuickSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadixQueueSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.RadixQueueSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadixSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.RadixSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch SelectSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.SelectSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShellSort",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.sort.ShellSort",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestBinaryTree",
+            "request": "launch",
+            "mainClass": "com.dong.SE.dataStructure.tree.TestBinaryTree",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileDiguiDemo",
+            "request": "launch",
+            "mainClass": "com.dong.SE.digui.FileDiguiDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch FileFilterDemo",
+            "request": "launch",
+            "mainClass": "com.dong.SE.digui.FileFilterDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumMultiDemo",
+            "request": "launch",
+            "mainClass": "com.dong.SE.digui.SumMultiDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionDemo",
+            "request": "launch",
+            "mainClass": "com.dong.SE.exception.ExceptionDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionDemo2",
+            "request": "launch",
+            "mainClass": "com.dong.SE.exception.ExceptionDemo2",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapTest",
+            "request": "launch",
+            "mainClass": "com.dong.SE.map.MapTest",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReflectDemo",
+            "request": "launch",
+            "mainClass": "com.dong.SE.reflect.ReflectDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReflectDemo2",
+            "request": "launch",
+            "mainClass": "com.dong.SE.reflect.ReflectDemo2",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReflectTest",
+            "request": "launch",
+            "mainClass": "com.dong.SE.reflect.ReflectTest",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCheck",
+            "request": "launch",
+            "mainClass": "com.dong.SE.reflect.TestCheck",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo",
+            "request": "launch",
+            "mainClass": "com.dong.SE.threads.Demo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadPoolDemo1",
+            "request": "launch",
+            "mainClass": "com.dong.SE.threads.ThreadPoolDemo1",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadTest",
+            "request": "launch",
+            "mainClass": "com.dong.SE.threads.ThreadTest",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaitAndNotify",
+            "request": "launch",
+            "mainClass": "com.dong.SE.threads.WaitAndNotify",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch C3P0Demo1",
+            "request": "launch",
+            "mainClass": "com.dong.datasource.c3p0.C3P0Demo1",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch C3P0Demo2",
+            "request": "launch",
+            "mainClass": "com.dong.datasource.c3p0.C3P0Demo2",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch DruidDemo1",
+            "request": "launch",
+            "mainClass": "com.dong.datasource.druid.DruidDemo1",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch DruidDemo2",
+            "request": "launch",
+            "mainClass": "com.dong.datasource.druid.DruidDemo2",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo10",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo10",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo2",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo2",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo3",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo3",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo4",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo4",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo6",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo6",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo8",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo8",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JDBCDemo9",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JDBCDemo9",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JdbcDemo1",
+            "request": "launch",
+            "mainClass": "com.dong.jdbc.JdbcDemo1",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch JdbcTemplateDemo1",
+            "request": "launch",
+            "mainClass": "com.dong.jdbctemplate.JdbcTemplateDemo1",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClientDemo",
+            "request": "launch",
+            "mainClass": "com.dong.socket.ClientDemo",
+            "projectName": "learn_tomcat_2a428880"
+        },
+        {
+            "type": "java",
+            "name": "Launch ServerDemo",
+            "request": "launch",
+            "mainClass": "com.dong.socket.ServerDemo",
+            "projectName": "learn_tomcat_2a428880"
+        }
+    ]
+}

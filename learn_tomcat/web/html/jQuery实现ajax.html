@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <!--<button  >点击我发送异步请求</button>-->
+    <input type="button" value="点击我发送异步请求,jquery实现ajax" onclick="fun();">
+    <input type="text">
+</body>
+<script>
+
+    function fun(){
+        $.ajax({
+            url:"/learn_tomcat/ajaxServlet",
+            type:"post",
+            // data:"username=Tom&age=23"  下边的更常用
+            data:{"username":"zhangsan","age":"23"},
+            success:function (data) {//这里的data存储的是响应的数据
+                alert(data);
+                console.log("测试")
+            },//响应成功后的回调函数
+            error:function (){
+                alert("出错啦");
+            },//表示如果请求出错了，会执行的回调函数
+            dataType:"text"
+        });
+    }
+</script>
+</html>

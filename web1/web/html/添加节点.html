@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="ulid">
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+    </ul>
+    <button onclick="addLi()">添加节点</button>
+
+    <script>
+        function addLi(){
+            //创建li标签
+            var liEle = document.createElement("li");
+            //创建文本
+            var textEle = document.createTextNode("555");
+            //将文本添加到li下
+            liEle.appendChild(textEle)
+            //获取ul标签
+            var ulEle = document.getElementById("ulid");
+            //把li添加到ul下
+            ulEle.appendChild(liEle)
+        }
+    </script>
+</body>
+</html>

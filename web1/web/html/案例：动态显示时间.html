@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div id="time">
+
+  </div>
+
+  <script>
+    function getTime(){
+      var date = new Date();
+      var d1 = date.toLocaleString();
+      var timeEle = document.getElementById("time");
+      timeEle.innerHTML = d1;
+    }
+    setInterval("getTime()",1000);
+  </script>
+</body>
+</html>

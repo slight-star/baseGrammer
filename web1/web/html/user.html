@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px" bordercolor="orange">
+    <tr>
+        <td>操作</td>
+        <td>编号</td>
+        <td>姓名</td>
+    </tr>
+    <tr>
+        <td><input type="button" value="选择" onclick="s1('001','张三')"></td>
+        <td>001</td>
+        <td>张三</td>
+    </tr>
+    <tr>
+        <td><input type="button" value="选择" onclick="s1('002','李四')"></td>
+        <td>002</td>
+        <td>李四</td>
+    </tr>
+    <tr>
+        <td><input type="button" value="选择" onclick="s1('003','王五')"></td>
+        <td>003</td>
+        <td>王五</td>
+    </tr>
+</table>
+</body>
+<script type="text/javascript">
+    function s1(num1,name1){
+        var pwin = window.opener; //获取创建这个窗口的窗口
+        pwin.document.getElementById("numId").value = num1;
+        pwin.document.getElementById("nameId").value = name1;
+        window.close();
+    }
+
+</script>
+</html>

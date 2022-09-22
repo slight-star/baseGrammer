@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>省份下拉列表</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+<!--<span id="context" value="${pageContext.request.contextPath}"/>-->
+    <select name="privince" id="province">
+        <option >--请选择省份--</option>
+    </select>
+    <span></span>
+
+    <!--<button id="button">点击</button>-->
+
+</body>
+<script>
+    $(document).ready(function(){
+
+        $.post("provinceServlet",{},function(data){
+            // for(var i = 0; i < data.length; i++){
+            //     alert(data[i].name);
+            //     var option = "<option name='"+data[i].id+"'>"+data[i].name+"</option>";
+            //     $("#province").append(option);
+            // }
+            $(data).each(function(){
+                alert(this.name);
+                var option = "<option name='"+this.id+"'>"+this.name+"</option>";
+                $("#province").append(option);
+            })
+        },"json");
+    });
+
+    // $("#button").onclick(function(){
+    //     $.post(contextPath+"provinceServlet",{},function(data){
+    //
+    //         for(var i = 0; i < data.length; i++){
+    //             var option = "<option name='"+data[i].id+"'>"+data[i].name+"</option>";
+    //             $("#province").append(option);
+    //         }
+    //     },"json");
+    // })
+</script>
+
+</html>
